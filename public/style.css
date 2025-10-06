@@ -1,0 +1,25 @@
+.subheaderFontLandingPage {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.navbarLinkSelected {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.exploreButton {
+  background-color: #8d8a8a;
+  cursor: pointer;
+  font-size:14px;
+}
+
+.productsButton {
+  padding-left: 0px;
+  font-size: 16px;
+}
+
