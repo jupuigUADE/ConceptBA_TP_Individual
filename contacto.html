@@ -6,19 +6,20 @@
     <title>ConceptBA - Contacto</title>
          <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./public/style.css">
+  <script src="./cart.js"></script>
 </head>
 <body>
    <header class="absolute inset-x-0 top-0 z-50">
 
     <!-- Discount Banner -->
-<div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 bg-gray-700 ">
+<div id="discount-banner" class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 bg-gray-700 ">
   <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-white">
     <p class="text-sm/6">
-      <strong class="font-semibold">Primavera/Verano 2025</strong><svg viewBox="0 0 2 2" aria-hidden="true" class="mx-2 inline size-0.5 fill-current"><circle r="1" cx="1" cy="1" /></svg>Descuentos de hasta el 50% - 20% off abonando en efectivo
+      <strong class="font-semibold">¡Ofertas Especiales!</strong><svg viewBox="0 0 2 2" aria-hidden="true" class="mx-2 inline size-0.5 fill-current"><circle r="1" cx="1" cy="1" /></svg>50% en el 2º producto • 3x2 hasta $120 • 10% off en compras +$3.000
     </p>
   </div>
   <div class="flex flex-1 justify-end">
-    <button type="button" class="-m-3 p-3 focus-visible:-outline-offset-4">
+    <button type="button" class="-m-3 p-3 focus-visible:-outline-offset-4" onclick="closeBanner()">
       <span class="sr-only">Dismiss</span>
       <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 text-white">
         <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
@@ -31,7 +32,7 @@
     <nav aria-label="Global" class="flex items-center justify-between p-2 lg:px-8">
       <div class="flex lg:flex-1">
         <a href="index.html" class="-m-1.5 p-1.5">
-          <img src="./public/logo3.png" alt="" class="h-18 w-20" />
+          <img src="./public/logo3.png" alt="" class="h-24 w-28" />
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -69,16 +70,17 @@
 
 
 
-        <a href="nosotros.html" class="text-sm/6 font-semibold text-gray-900">Nosotros</a>
-        <a href="contacto.html" class="text-sm/6 font-semibold text-gray-900 navbarLinkSelected">Contacto</a>
-        <a href="sucursales.html" class="text-sm/6 font-semibold text-gray-900">Sucursales</a>
+  <a href="nosotros.html" class="text-sm/6 font-semibold text-gray-900">Nosotros</a>
+  <a href="contacto.html" class="text-sm/6 font-semibold text-gray-900 navbarLinkSelected">Contacto</a>
+  <a href="sucursales.html" class="text-sm/6 font-semibold text-gray-900">Sucursales</a>
+  <a href="promociones.html" class="text-sm/6 font-semibold text-gray-900">Promociones</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
          <span href="#" class="group -m-2 flex items-center p-2">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 shrink-0 text-gray-400 group-hover:text-gray-500">
                   <path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                <span id="cart-counter" class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
                 <span class="sr-only">items in cart, view bag</span>
               </span>
       </div>
@@ -91,7 +93,7 @@
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img src="./public/logo3.png" alt="" class="h-17 w-auto" />
+                <img src="./public/logo3.png" alt="" class="h-20 w-24" />
               </a>
               <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Close menu</span>

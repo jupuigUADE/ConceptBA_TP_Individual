@@ -15,7 +15,22 @@ html {
 .exploreButton {
   border: 2px solid black;
   cursor: pointer;
-  font-size:14px;
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.exploreButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.exploreButton:active {
+  transform: translateY(1px);
 }
 
 .productsButton {
@@ -23,8 +38,20 @@ html {
   font-size: 16px;
 }
 
-.headingPage {
+.removeBtn {
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: underline;
+  padding: 2px 4px;
+}
 
+.removeBtn:hover {
+  color: #991b1b;
+  background-color: #fee2e2;
+  border-radius: 2px;
 }
 
 @media (max-width: 600px) {
